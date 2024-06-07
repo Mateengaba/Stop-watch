@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stop Watch</title>
+</head>
+
+<body>
+    <!-- grand-parent -->
+    <div class="container"> 
+        <!-- parent   -->
+        <div class="watch">
+            <p>Stop Watch</p>
+            <!-- 1st parent child -->
+            <div id="result">
+               
+                <div class="time-segment">
+                    <span id="minhead">00</span>
+                    <label>Min</label>
+                </div>
+
+                <div class="time-segment">
+                    <span id="Sechead">00</span>
+                    <label>Sec</label>
+                </div>
+
+                <div class="time-segment">
+                    <span id="milihead">00</span>
+                    <label>Mili</label>
+                </div>
+
+            </div>
+
+            <!-- 2nd parent child -->
+            <div class="btns">
+                <button id="startbtn" onclick="startWatch()">Start</button>
+                <button id="stopbtn" class="hidden" onclick="stop()">Stop</button>
+                <button id="resetbtn" onclick="reset()">Reset</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
